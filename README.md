@@ -1,12 +1,4 @@
-<details markdown="1">
-<summary> 목차 </summary>
-</br>
-
 [TOC]
-
-</details>
-
-
 
 ---
 
