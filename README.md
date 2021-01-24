@@ -15,11 +15,7 @@
 2. Info.plist에서 Application Scene Manifest 항목 삭제
 3. AppDelegate.swift 편집 (window 변수 만들고 맨위 함수 빼고 모두 제거)
 
-![스크린샷 2021-01-21 오후 6.06.42](/Users/yoojin/Library/Application Support/typora-user-images/스크린샷 2021-01-21 오후 6.06.42.png)
-
-
-
-
+<img width="640" alt="스크린샷 2021-01-21 오후 6 06 42" src="https://user-images.githubusercontent.com/50395024/105628016-934aae00-5e7d-11eb-902d-81baed1a0773.png">
 
 
 
