@@ -78,14 +78,22 @@
 		FF82F8D525B975B900784E31 /* defaultProject */ = {
 			isa = PBXGroup;
 			children = (
+				FF82F8FD25BE517900784E31 /* Resource */,
 				FF82F8D625B975B900784E31 /* AppDelegate.swift */,
 				FF82F8DA25B975B900784E31 /* ViewController.swift */,
 				FF82F8DC25B975B900784E31 /* Main.storyboard */,
-				FF82F8DF25B975BA00784E31 /* Assets.xcassets */,
 				FF82F8E125B975BA00784E31 /* LaunchScreen.storyboard */,
 				FF82F8E425B975BA00784E31 /* Info.plist */,
 			);
 			path = defaultProject;
+			sourceTree = "<group>";
+		};
+		FF82F8FD25BE517900784E31 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FF82F8DF25B975BA00784E31 /* Assets.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,6 +108,7 @@
 				FF82F8CF25B975B900784E31 /* Sources */,
 				FF82F8D025B975B900784E31 /* Frameworks */,
 				FF82F8D125B975B900784E31 /* Resources */,
+				FF82F8FC25BE512900784E31 /* SwiftGen */,
 			);
 			buildRules = (
 			);
@@ -195,6 +204,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		FF82F8FC25BE512900784E31 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n   swiftgen xcassets \"${SRCROOT}/${TARGETNAME}/Resource/Assets.xcassets\" -t swift4 -o \"${SRCROOT}/${TARGETNAME}/Resource/Asset.swift\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

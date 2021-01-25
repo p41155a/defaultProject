@@ -7,5 +7,6 @@ target 'defaultProject' do
 
   # Pods for defaultProject
   pod 'SwiftLint'
+  pod 'SwiftGen'
 
 end
