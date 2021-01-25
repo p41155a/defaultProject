@@ -3,11 +3,13 @@
 </br>
 
 
- [Deployment Target 12.0](#Deployment-Target-12.0)
+ [Deployment Target 12.0](#-deployment-target-12.0)
+
+[라이브러리 정리](#-gitignore)
 
 </details>
 
-## Deployment Target 12.0
+## 🍏 Deployment Target 12.0
 
 지원 버전이 13.0 이하라면 sceneDelegate를 사용할 수 없다.
 
@@ -19,3 +21,43 @@
 
 
 
+## 🍏 .gitignore
+
+* `.gitignore` 파일을 추가하기 전에 commit을 했다면?
+
+```
+git rm -r --cached [파일명]
+```
+
+
+
+### references
+
+* https://github.com/github/gitignore : github 공식 레포
+
+* https://gitignore.io : 간단하게 gitignore 파일을 만들어주는 사이트
+
+
+
+## 🍏 SwiftLint
+
+### SwiftLint 적용하기
+
+* swiftLint 라이브러리 다운 후
+* `Build Phases`에서`New Run Script Phases` 클릭하여 아래의 코드 추가
+
+```swift
+if which swiftlint >/dev/null; then
+    swiftlint
+else
+    echo "warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
+fi
+```
+
+* 방금 추가한 스텝의 위치를 `Compile Sources` 위로 이동한다.
+
+
+
+### references
+
+* https://github.com/realm/SwiftLint
