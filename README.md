@@ -7,6 +7,8 @@
 
 [라이브러리 정리](#-gitignore)
 
+[Extension](#-extension)
+
 </details>
 
 ## 🍏 Deployment Target 12.0
@@ -18,6 +20,10 @@
 3. AppDelegate.swift 편집 (window 변수 만들고 맨위 함수 빼고 모두 제거)
 
 <img width="640" alt="스크린샷 2021-01-21 오후 6 06 42" src="https://user-images.githubusercontent.com/50395024/105628016-934aae00-5e7d-11eb-902d-81baed1a0773.png">
+
+
+
+---
 
 
 
@@ -104,3 +110,27 @@ swiftgen xcassets --param enumName=Colors "${SRCROOT}/${TARGETNAME}/Resource/Ass
 ### references
 
 - https://github.com/SwiftGen/SwiftGen
+
+
+
+---
+
+
+
+## 🍏 Extension
+
+### Storyboard
+
+- 테스트를 위해 View 두개를 만들고 하나에 Navigation을 연결합니다. (Editor - Embed in - Navigation Controller)
+- Stroyboard의 이름과 code의 파일 이름은 같게 한다
+
+![스크린샷 2021-01-25 오전 11 08 16](https://user-images.githubusercontent.com/50395024/105653798-0ac12180-5f00-11eb-9619-d0d51fe689b1.png)
+
+- Storyboarded protocol을 만들어 UIViewController에 protocol을 채택합니다
+
+참고 블로그: https://swieeft.github.io/2021/01/21/SimpleToUseTableViewCell.html
+
+
+
+
+
