@@ -128,6 +128,10 @@ swiftgen xcassets --param enumName=Colors "${SRCROOT}/${TARGETNAME}/Resource/Ass
 
 - Storyboarded protocol을 만들어 UIViewController에 protocol을 채택합니다
 
+
+
+#### 사용법
+
 ```swift
 let viewcontroller = TableSampleViewController.instantiate()
 self.navigationController?.pushViewController(viewcontroller, animated: true)
@@ -137,5 +141,24 @@ self.navigationController?.pushViewController(viewcontroller, animated: true)
 
 
 
+### TableViewCell
+
+- 클래스명, nibname, id를 동일하게 설정한다.
+
+![스크린샷 2021-01-25 오후 12 51 42](https://user-images.githubusercontent.com/50395024/105660628-c8531100-5f0e-11eb-9b15-37a2baa3f071.png)
+
+![스크린샷 2021-01-25 오후 12 50 44](https://user-images.githubusercontent.com/50395024/105660623-c721e400-5f0e-11eb-96cd-76fbfb9fd488.png)
+
+- TableViewCelled을 만들어 UITableViewCell에 protocol을 채택합니다
 
 
+
+#### 사용법
+
+```swift
+func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+  return TableSampleTableViewCell.dequeueReusableCell(tableView: tableView)
+}
+```
+
+참고 블로그: https://swieeft.github.io/2021/01/21/SimpleToUseTableViewCell.html
