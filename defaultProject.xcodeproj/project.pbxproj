@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		213B4BD605F0405D9BF40C2A /* Pods_defaultProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD1EFB9D14A335A8F6616F28 /* Pods_defaultProject.framework */; };
 		FF82F8D725B975B900784E31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82F8D625B975B900784E31 /* AppDelegate.swift */; };
 		FF82F8DB25B975B900784E31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82F8DA25B975B900784E31 /* ViewController.swift */; };
 		FF82F8DE25B975B900784E31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF82F8DC25B975B900784E31 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68F6CB0F6179A6C0FCD8E1F6 /* Pods-defaultProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaultProject.debug.xcconfig"; path = "Target Support Files/Pods-defaultProject/Pods-defaultProject.debug.xcconfig"; sourceTree = "<group>"; };
+		BC0C899FC4A48FFB47693D9A /* Pods-defaultProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaultProject.release.xcconfig"; path = "Target Support Files/Pods-defaultProject/Pods-defaultProject.release.xcconfig"; sourceTree = "<group>"; };
+		DD1EFB9D14A335A8F6616F28 /* Pods_defaultProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_defaultProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF82F8D325B975B900784E31 /* defaultProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = defaultProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF82F8D625B975B900784E31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF82F8DA25B975B900784E31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				213B4BD605F0405D9BF40C2A /* Pods_defaultProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD0CDFCE933AF546FF47241C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD1EFB9D14A335A8F6616F28 /* Pods_defaultProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE9E7F03F09D35D4F59874D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68F6CB0F6179A6C0FCD8E1F6 /* Pods-defaultProject.debug.xcconfig */,
+				BC0C899FC4A48FFB47693D9A /* Pods-defaultProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FF82F8CA25B975B900784E31 = {
 			isa = PBXGroup;
 			children = (
 				FF82F8D525B975B900784E31 /* defaultProject */,
 				FF82F8D425B975B900784E31 /* Products */,
+				DE9E7F03F09D35D4F59874D6 /* Pods */,
+				CD0CDFCE933AF546FF47241C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +95,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF82F8E725B975BA00784E31 /* Build configuration list for PBXNativeTarget "defaultProject" */;
 			buildPhases = (
+				B541E34E960D9CD13BF7CDBC /* [CP] Check Pods Manifest.lock */,
+				FF82F8F025BE4D6700784E31 /* SwiftLint */,
 				FF82F8CF25B975B900784E31 /* Sources */,
 				FF82F8D025B975B900784E31 /* Frameworks */,
 				FF82F8D125B975B900784E31 /* Resources */,
@@ -128,6 +154,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B541E34E960D9CD13BF7CDBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-defaultProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF82F8F025BE4D6700784E31 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FF82F8CF25B975B900784E31 /* Sources */ = {
@@ -279,6 +348,7 @@
 		};
 		FF82F8E825B975BA00784E31 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68F6CB0F6179A6C0FCD8E1F6 /* Pods-defaultProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -298,6 +368,7 @@
 		};
 		FF82F8E925B975BA00784E31 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC0C899FC4A48FFB47693D9A /* Pods-defaultProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
