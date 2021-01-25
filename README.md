@@ -128,6 +128,11 @@ swiftgen xcassets --param enumName=Colors "${SRCROOT}/${TARGETNAME}/Resource/Ass
 
 - Storyboarded protocol을 만들어 UIViewController에 protocol을 채택합니다
 
+```swift
+let viewcontroller = TableSampleViewController.instantiate()
+self.navigationController?.pushViewController(viewcontroller, animated: true)
+```
+
 참고 블로그: https://swieeft.github.io/2021/01/21/SimpleToUseTableViewCell.html
 
 
