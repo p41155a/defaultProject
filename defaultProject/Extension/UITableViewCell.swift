@@ -9,4 +9,3 @@ import UIKit
 
 extension UITableViewCell: TableViewCelled {
 }
-

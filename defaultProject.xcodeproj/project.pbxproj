@@ -22,6 +22,9 @@
 		FF82F94325BE741F00784E31 /* TableSampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82F94225BE741F00784E31 /* TableSampleTableViewCell.swift */; };
 		FF82F94A25BE747600784E31 /* TableSampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF82F94925BE747600784E31 /* TableSampleTableViewCell.xib */; };
 		FFA6944825BFB89300C4316E /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA6944725BFB89300C4316E /* Asset.swift */; };
+		FFA6945C25BFBE9A00C4316E /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFA6945B25BFBE9A00C4316E /* AlertViewController.xib */; };
+		FFA6945F25BFBEA600C4316E /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA6945E25BFBEA600C4316E /* AlertViewController.swift */; };
+		FFA6946225BFC00E00C4316E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA6946125BFC00E00C4316E /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		FF82F94225BE741F00784E31 /* TableSampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSampleTableViewCell.swift; sourceTree = "<group>"; };
 		FF82F94925BE747600784E31 /* TableSampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableSampleTableViewCell.xib; sourceTree = "<group>"; };
 		FFA6944725BFB89300C4316E /* Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		FFA6945B25BFBE9A00C4316E /* AlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertViewController.xib; sourceTree = "<group>"; };
+		FFA6945E25BFBEA600C4316E /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		FFA6946125BFC00E00C4316E /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,7 @@
 			children = (
 				FF82F93425BE619800784E31 /* UIViewController.swift */,
 				FF82F93F25BE6A9200784E31 /* UITableViewCell.swift */,
+				FFA6946125BFC00E00C4316E /* UIView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -167,6 +174,8 @@
 		FFA6944A25BFBB8D00C4316E /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				FFA6945B25BFBE9A00C4316E /* AlertViewController.xib */,
+				FFA6945E25BFBEA600C4316E /* AlertViewController.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -236,6 +245,7 @@
 				FF82F8E325B975BA00784E31 /* LaunchScreen.storyboard in Resources */,
 				FF82F92225BE5F1400784E31 /* MainViewController.storyboard in Resources */,
 				FF82F8E025B975BA00784E31 /* Assets.xcassets in Resources */,
+				FFA6945C25BFBE9A00C4316E /* AlertViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +319,9 @@
 			files = (
 				FFA6944825BFB89300C4316E /* Asset.swift in Sources */,
 				FF82F93D25BE6A4700784E31 /* TableViewCelled.swift in Sources */,
+				FFA6946225BFC00E00C4316E /* UIView.swift in Sources */,
 				FF82F92925BE5F4200784E31 /* MainViewController.swift in Sources */,
+				FFA6945F25BFBEA600C4316E /* AlertViewController.swift in Sources */,
 				FF82F91B25BE5E8000784E31 /* Storyboarded.swift in Sources */,
 				FF82F8D725B975B900784E31 /* AppDelegate.swift in Sources */,
 				FF82F92D25BE5FDB00784E31 /* TableSampleViewController.swift in Sources */,
