@@ -21,6 +21,7 @@
 		FF82F94025BE6A9200784E31 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82F93F25BE6A9200784E31 /* UITableViewCell.swift */; };
 		FF82F94325BE741F00784E31 /* TableSampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82F94225BE741F00784E31 /* TableSampleTableViewCell.swift */; };
 		FF82F94A25BE747600784E31 /* TableSampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF82F94925BE747600784E31 /* TableSampleTableViewCell.xib */; };
+		FFA6944825BFB89300C4316E /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA6944725BFB89300C4316E /* Asset.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		FF82F93F25BE6A9200784E31 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
 		FF82F94225BE741F00784E31 /* TableSampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSampleTableViewCell.swift; sourceTree = "<group>"; };
 		FF82F94925BE747600784E31 /* TableSampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableSampleTableViewCell.xib; sourceTree = "<group>"; };
+		FFA6944725BFB89300C4316E /* Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		FF82F8FD25BE517900784E31 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				FFA6944725BFB89300C4316E /* Asset.swift */,
 				FF82F8DF25B975BA00784E31 /* Assets.xcassets */,
 			);
 			path = Resource;
@@ -125,6 +128,7 @@
 		FF82F91E25BE5EAA00784E31 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				FFA6944A25BFBB8D00C4316E /* Common */,
 				FF82F92125BE5F1400784E31 /* MainViewController.storyboard */,
 				FF82F92825BE5F4200784E31 /* MainViewController.swift */,
 				FF82F92B25BE5FB800784E31 /* TableSample */,
@@ -158,6 +162,13 @@
 				FF82F94225BE741F00784E31 /* TableSampleTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		FFA6944A25BFBB8D00C4316E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFA6944825BFB89300C4316E /* Asset.swift in Sources */,
 				FF82F93D25BE6A4700784E31 /* TableViewCelled.swift in Sources */,
 				FF82F92925BE5F4200784E31 /* MainViewController.swift in Sources */,
 				FF82F91B25BE5E8000784E31 /* Storyboarded.swift in Sources */,
