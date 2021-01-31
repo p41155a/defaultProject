@@ -166,3 +166,17 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
 ```
 
 참고 블로그: https://swieeft.github.io/2021/01/21/SimpleToUseTableViewCell.html
+
+
+
+## AlertView
+
+원하는 View를 xib 파일로 만든 후
+
+![스크린샷 2021-01-26 오후 12 09 10](https://user-images.githubusercontent.com/50395024/106377411-2a64b800-63e0-11eb-93ee-d9762b2a2f6f.png)
+
+![스크린샷 2021-01-26 오후 1 34 10](https://user-images.githubusercontent.com/50395024/106377414-2df83f00-63e0-11eb-9ce5-a5f0adbf3e5e.png)
+
+위와 같이 file's Owner에 Controller에 연결하고 View와 연결하고 나머지 원하는 outlet들을 연결하고 action을 연결하여
+
+기능을 만든다
