@@ -11,6 +11,8 @@
 
 </details>
 
+
+
 ## 🍏 Deployment Target 12.0
 
 지원 버전이 13.0 이하라면 sceneDelegate를 사용할 수 없다.
