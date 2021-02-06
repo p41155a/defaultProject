@@ -181,4 +181,4 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
 
 위와 같이 file's Owner에 Controller에 연결하고 View와 연결하고 나머지 원하는 outlet들을 연결하고 action을 연결하여
 
-기능을 만든다
+기능을 만듭니다.
